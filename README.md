@@ -103,6 +103,8 @@
 
 # examples:
 
+![Screenshot](VSC_thunder_get.png)
+
 POST /data
 
 http://localhost:5000/data
