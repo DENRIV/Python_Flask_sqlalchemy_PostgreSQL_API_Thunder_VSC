@@ -104,30 +104,41 @@
 # examples:
 
 POST /data
+
 http://localhost:5000/data
+
 body request: {name:"x", age:"y"}
-.
+
 http://127.0.0.1:5000/data
+
 {"name":"x", "age":"y"}
-.
+
+
 http://127.0.0.1:5000/data
+
 {"name":"w", "age":"z"}
-.
+
 http://127.0.0.1:5000/data
+
 {"name":"q", "age":"j"}
 
 
 GET /data
+
 GET /data/{:id}
 
 PUT /data/{:id}
+
 body request: {name:"x", age:"y"}
-.
+
 http://127.0.0.1:5000/data/2
+
 {"name":"w", "age":"z2"}
+
 #  "status": "Data 2 is updated from PostgreSQL!"
 
 GET
+
 http://127.0.0.1:5000/data/3
 {
     "age": "j",
@@ -136,8 +147,9 @@ http://127.0.0.1:5000/data/3
 }
 
 DELETE /data/{:id}
+
 http://127.0.0.1:5000/data/3
 #  "status": "Data 3\n is deleted from PostgreSQL!"
-}
+
 
 
